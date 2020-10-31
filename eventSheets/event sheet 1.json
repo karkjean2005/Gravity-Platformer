@@ -1,0 +1,353 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "garv",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 956248715341746
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 983256591391546,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 838468578157280,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 829221617142979,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Gravity is off"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 387715970831450,
+									"parameters": {
+										"variable": "garv",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "p",
+									"sid": 899600580043656,
+									"parameters": {
+										"angle": "180"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "p",
+									"sid": 230866311563835,
+									"parameters": {
+										"instance-variable": "p_gav",
+										"value": "270"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 654820213809508,
+									"parameters": {
+										"variable": "garv",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 397096865280934
+						},
+						{
+							"eventType": "comment",
+							"text": "Gravity is on"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 946951480414617
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "p",
+									"sid": 404742383020459,
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "p",
+									"sid": 709658642907876,
+									"parameters": {
+										"instance-variable": "p_gav",
+										"value": "90"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 514671314159676,
+									"parameters": {
+										"variable": "garv",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 367783713970602
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 977247506403157,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [],
+			"sid": 493359280619873,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "p",
+							"sid": 685276320438072,
+							"parameters": {
+								"instance-variable": "p_gav",
+								"comparison": 0,
+								"value": "270"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "p",
+							"sid": 307918198638017,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "p",
+							"sid": 750843505329731,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 693218847318593
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "p",
+							"sid": 962549525787664,
+							"parameters": {
+								"instance-variable": "p_gav",
+								"comparison": 0,
+								"value": "90"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "p",
+							"sid": 492863624418497,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "p",
+							"sid": 862829260175905,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 344497772844366
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 937492205752584,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [],
+			"sid": 707839715167686,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "p",
+							"sid": 378777657667150,
+							"parameters": {
+								"instance-variable": "p_gav",
+								"comparison": 0,
+								"value": "270"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "p",
+							"sid": 883676744695002,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "p",
+							"sid": 118343783029102,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 960875602351433
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "p",
+							"sid": 993564280749921,
+							"parameters": {
+								"instance-variable": "p_gav",
+								"comparison": 0,
+								"value": "90"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "p",
+							"sid": 759919696669813,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "p",
+							"sid": 588613969898947,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 826356943760386
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 915189817497794,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "p",
+					"sid": 692842985015311,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 197735603106971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 637786915562702
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-gravity",
+					"objectClass": "p",
+					"sid": 617297717151192,
+					"behaviorType": "Platform",
+					"parameters": {
+						"angle": "Self.p_gav"
+					}
+				}
+			],
+			"sid": 259001270288439
+		}
+	],
+	"sid": 217164765619070
+}

@@ -1,16 +1,10 @@
 {
-	"name": "gr",
+	"name": "spikes",
 	"plugin-id": "Sprite",
-	"sid": 618135714663641,
+	"sid": 786697562221130,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 623186330642701
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2134298,
+						"imageSpriteId": 2783100,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 369386545470102,
+				"sid": 289566122805528,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

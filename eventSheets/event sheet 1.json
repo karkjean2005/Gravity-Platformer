@@ -12,6 +12,16 @@
 			"sid": 956248715341746
 		},
 		{
+			"eventType": "variable",
+			"name": "rotationNumber",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 634116967203520
+		},
+		{
 			"eventType": "block",
 			"conditions": [],
 			"actions": [],
@@ -402,6 +412,94 @@
 				}
 			],
 			"sid": 880406986324082
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 114578182947231
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "block",
+					"sid": 885690905309286,
+					"parameters": {
+						"x": "center.X+200*cos(rotationNumber)"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "block",
+					"sid": 102494827960455,
+					"parameters": {
+						"y": "center.Y+200*sin(rotationNumber)"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "block",
+					"sid": 669328865730041,
+					"parameters": {
+						"x": "center.X ",
+						"y": "center.Y"
+					}
+				}
+			],
+			"sid": 535646212421925
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 608345341982029,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 284148151725366,
+					"parameters": {
+						"variable": "rotationNumber",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 450621793270785
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 184276980339853,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 895664608874100,
+					"parameters": {
+						"variable": "rotationNumber",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 161143276340766
 		}
 	],
 	"sid": 217164765619070

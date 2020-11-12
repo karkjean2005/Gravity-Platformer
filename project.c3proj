@@ -74,7 +74,11 @@
 			"spikes",
 			"moving_Plfrom",
 			"jumpt",
-			"end"
+			"end",
+			"block",
+			"Sprite",
+			"Sprite2",
+			"center"
 		],
 		"subfolders": []
 	},

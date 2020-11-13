@@ -426,7 +426,7 @@
 				{
 					"id": "set-x",
 					"objectClass": "block",
-					"sid": 885690905309286,
+					"sid": 229595078582808,
 					"parameters": {
 						"x": "center.X+200*cos(rotationNumber)"
 					}
@@ -434,7 +434,7 @@
 				{
 					"id": "set-y",
 					"objectClass": "block",
-					"sid": 102494827960455,
+					"sid": 663728300620735,
 					"parameters": {
 						"y": "center.Y+200*sin(rotationNumber)"
 					}
@@ -500,6 +500,27 @@
 				}
 			],
 			"sid": 161143276340766
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 308537837075144
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-x",
+					"objectClass": "System",
+					"sid": 847624954087913,
+					"parameters": {
+						"x": "0"
+					}
+				}
+			],
+			"sid": 592541832332982
 		}
 	],
 	"sid": 217164765619070

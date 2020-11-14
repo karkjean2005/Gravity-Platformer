@@ -23,6 +23,38 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r219.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -79,7 +111,19 @@
 			"Sprite2",
 			"center",
 			"grvzone",
-			"Sprite3"
+			"Sprite3",
+			"Tilemap",
+			"TiledBackground",
+			"Text",
+			"Text2",
+			"TiledBackground2",
+			"TiledBackground3",
+			"TiledBackground4",
+			"TiledBackground5",
+			"Text3",
+			"Text4",
+			"Text5",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -92,7 +136,9 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"test"
+			"test",
+			"Opening Intro",
+			"How to play Screen"
 		],
 		"subfolders": []
 	},
@@ -112,7 +158,13 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Enter the Intro.mp3",
+					"type": "audio/mpeg",
+					"sid": 871680902537567
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

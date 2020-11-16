@@ -22,6 +22,26 @@
 			"sid": 634116967203520
 		},
 		{
+			"eventType": "variable",
+			"name": "XVector",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 176269929525813
+		},
+		{
+			"eventType": "variable",
+			"name": "YVector",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 256857227184545
+		},
+		{
 			"eventType": "block",
 			"conditions": [],
 			"actions": [],
@@ -505,27 +525,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 308537837075144
-				}
-			],
-			"actions": [
-				{
-					"id": "scroll-to-x",
-					"objectClass": "System",
-					"sid": 847624954087913,
-					"parameters": {
-						"x": "0"
-					}
-				}
-			],
-			"sid": 592541832332982
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 900373159649611
@@ -545,6 +544,152 @@
 				}
 			],
 			"sid": 979260918405139
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 238690781743227
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 148442125884231,
+					"parameters": {
+						"variable": "XVector",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 839100522589824,
+					"parameters": {
+						"variable": "YVector",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 468509297320643
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "p",
+					"sid": 356565606501368,
+					"parameters": {
+						"object": "grvzone"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 202607648163317,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "grvzone",
+							"sid": 540363193003876,
+							"parameters": {
+								"instance-variable": "Relative"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 943003078545911,
+							"parameters": {
+								"variable": "XVector",
+								"value": "cos(grvzone.Angle)"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 855274121064982,
+							"parameters": {
+								"variable": "YVector",
+								"value": "sin(grvzone.Angle)"
+							}
+						}
+					],
+					"sid": 484917445398541
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "grvzone",
+							"sid": 394383048837725,
+							"parameters": {
+								"instance-variable": "Relative"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 643359527878361,
+							"parameters": {
+								"variable": "XVector",
+								"value": "cos(angle(p.X,p.Y,grvzone.X,grvzone.Y))"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 320088971227356,
+							"parameters": {
+								"variable": "YVector",
+								"value": "sin(angle(p.X,p.Y,grvzone.X,grvzone.Y))"
+							}
+						}
+					],
+					"sid": 735209838861448
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "p",
+					"sid": 965002898316055,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-gravity",
+					"objectClass": "p",
+					"sid": 983380495915081,
+					"behaviorType": "Platform",
+					"parameters": {
+						"angle": "angle(p.x, p.y,block.X,block.Y)"
+					}
+				}
+			],
+			"sid": 354217055272609
+		},
+		{
+			"eventType": "comment",
+			"text": ""
 		}
 	],
 	"sid": 217164765619070

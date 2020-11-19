@@ -1822,6 +1822,8 @@
 					},
 					"uid": 60,
 					"instanceVariables": {
+						"rotan": 0,
+						"distB": 0,
 						"roation": 100
 					},
 					"behaviors": {

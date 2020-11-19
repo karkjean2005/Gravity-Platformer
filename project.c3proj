@@ -125,14 +125,17 @@
 			"Text5",
 			"Audio",
 			"Sprite",
-			"circle"
+			"circle",
+			"block2"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Family1"
+		],
 		"subfolders": []
 	},
 	"layouts": {

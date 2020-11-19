@@ -445,24 +445,24 @@
 			"actions": [
 				{
 					"id": "set-x",
-					"objectClass": "block",
-					"sid": 232244539665012,
+					"objectClass": "Family1",
+					"sid": 365838773324781,
 					"parameters": {
-						"x": "center.X+200*cos(rotationNumber)"
+						"x": "center.X+Family1.distB*cos(Family1.rotan)"
 					}
 				},
 				{
 					"id": "set-y",
-					"objectClass": "block",
-					"sid": 504601518524271,
+					"objectClass": "Family1",
+					"sid": 215764201505461,
 					"parameters": {
-						"y": "center.Y+200*sin(rotationNumber)"
+						"y": "center.Y+Family1.distB*sin(Family1.rotan)"
 					}
 				},
 				{
 					"id": "set-angle-toward-position",
-					"objectClass": "block",
-					"sid": 869324760618164,
+					"objectClass": "Family1",
+					"sid": 242557212856687,
 					"parameters": {
 						"x": "center.X ",
 						"y": "center.Y"
@@ -485,11 +485,11 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 284148151725366,
+					"id": "add-to-instvar",
+					"objectClass": "Family1",
+					"sid": 998410330486830,
 					"parameters": {
-						"variable": "rotationNumber",
+						"instance-variable": "rotan",
 						"value": "1"
 					}
 				}
@@ -510,11 +510,11 @@
 			],
 			"actions": [
 				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 895664608874100,
+					"id": "subtract-from-instvar",
+					"objectClass": "Family1",
+					"sid": 172201982553594,
 					"parameters": {
-						"variable": "rotationNumber",
+						"instance-variable": "rotan",
 						"value": "1"
 					}
 				}

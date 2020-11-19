@@ -124,7 +124,8 @@
 			"Text4",
 			"Text5",
 			"Audio",
-			"Sprite"
+			"Sprite",
+			"circle"
 		],
 		"subfolders": []
 	},
@@ -139,7 +140,8 @@
 			"Layout 1",
 			"test",
 			"Opening Intro",
-			"How to play Screen"
+			"How to play Screen",
+			"Layout 2"
 		],
 		"subfolders": []
 	},

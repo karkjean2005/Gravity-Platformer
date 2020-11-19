@@ -29,8 +29,8 @@
 					"world": {
 						"x": 746,
 						"y": 525,
-						"width": 112,
-						"height": 99,
+						"width": 112.896,
+						"height": 99.792,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -215,5 +215,5 @@
 	"width": 3816,
 	"height": 1920,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "Event sheet 1"
 }

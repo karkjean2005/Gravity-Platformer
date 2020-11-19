@@ -190,18 +190,18 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "p",
-							"sid": 307918198638017,
+							"sid": 207213081582201,
 							"behaviorType": "Platform",
 							"parameters": {
-								"control": "left"
+								"control": "right"
 							}
 						},
 						{
 							"id": "set-mirrored",
 							"objectClass": "p",
-							"sid": 750843505329731,
+							"sid": 699108260132413,
 							"parameters": {
-								"state": "mirrored"
+								"state": "not-mirrored"
 							}
 						}
 					],
@@ -234,7 +234,7 @@
 						{
 							"id": "set-mirrored",
 							"objectClass": "p",
-							"sid": 862829260175905,
+							"sid": 552860298310610,
 							"parameters": {
 								"state": "not-mirrored"
 							}
@@ -277,18 +277,18 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "p",
-							"sid": 883676744695002,
+							"sid": 178105042710350,
 							"behaviorType": "Platform",
 							"parameters": {
-								"control": "right"
+								"control": "left"
 							}
 						},
 						{
 							"id": "set-mirrored",
 							"objectClass": "p",
-							"sid": 118343783029102,
+							"sid": 757031934736412,
 							"parameters": {
-								"state": "not-mirrored"
+								"state": "mirrored"
 							}
 						}
 					],
@@ -321,7 +321,7 @@
 						{
 							"id": "set-mirrored",
 							"objectClass": "p",
-							"sid": 588613969898947,
+							"sid": 727181527062039,
 							"parameters": {
 								"state": "mirrored"
 							}
@@ -446,7 +446,7 @@
 				{
 					"id": "set-x",
 					"objectClass": "block",
-					"sid": 229595078582808,
+					"sid": 232244539665012,
 					"parameters": {
 						"x": "center.X+200*cos(rotationNumber)"
 					}
@@ -454,7 +454,7 @@
 				{
 					"id": "set-y",
 					"objectClass": "block",
-					"sid": 663728300620735,
+					"sid": 504601518524271,
 					"parameters": {
 						"y": "center.Y+200*sin(rotationNumber)"
 					}
@@ -462,7 +462,7 @@
 				{
 					"id": "set-angle-toward-position",
 					"objectClass": "block",
-					"sid": 669328865730041,
+					"sid": 869324760618164,
 					"parameters": {
 						"x": "center.X ",
 						"y": "center.Y"

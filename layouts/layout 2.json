@@ -293,8 +293,8 @@
 						}
 					},
 					"world": {
-						"x": 238,
-						"y": 920,
+						"x": 257,
+						"y": 923,
 						"width": 92,
 						"height": 91,
 						"originX": 0.5,
@@ -3122,35 +3122,6 @@
 					}
 				},
 				{
-					"type": "end",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 178,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 3524,
-						"y": 1842,
-						"width": 72,
-						"height": 104,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Text6",
 					"properties": {
 						"text": "Use Q and E to rotat",
@@ -3189,6 +3160,35 @@
 							1
 						],
 						"angle": 0.008107930435610665,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "end2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 178,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3523,
+						"y": 1841,
+						"width": 72,
+						"height": 104,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

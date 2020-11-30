@@ -416,27 +416,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "p",
-					"sid": 305613974424626,
-					"parameters": {
-						"object": "end"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 768349810096232
-				}
-			],
-			"sid": 880406986324082
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 114578182947231
@@ -774,6 +753,54 @@
 				}
 			],
 			"sid": 990242593971459
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "p",
+					"sid": 978061952406306,
+					"parameters": {
+						"object": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 539577612990432,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 976626101664643
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "p",
+					"sid": 521968913805294,
+					"parameters": {
+						"object": "end2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 721955808765145,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 267609269856382
 		}
 	],
 	"sid": 217164765619070

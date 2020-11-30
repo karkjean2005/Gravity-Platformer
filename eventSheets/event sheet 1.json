@@ -688,8 +688,92 @@
 			"sid": 354217055272609
 		},
 		{
-			"eventType": "comment",
-			"text": ""
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 248489325866503
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Family2",
+					"sid": 351003927415826,
+					"parameters": {
+						"x": "center2.X+Family2.dis*cos(Family2.rotation)"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Family2",
+					"sid": 423033800372859,
+					"parameters": {
+						"y": "center2.Y+Family2.dis*sin(Family2.rotation)"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Family2",
+					"sid": 163528617757791,
+					"parameters": {
+						"x": "center2.X",
+						"y": "center2.Y"
+					}
+				}
+			],
+			"sid": 936864083991124
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 988068826640193,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Family2",
+					"sid": 937692186340615,
+					"parameters": {
+						"instance-variable": "rotation",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 979245494417520
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 307339112545316,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Family2",
+					"sid": 583886460538608,
+					"parameters": {
+						"instance-variable": "rotation",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 990242593971459
 		}
 	],
 	"sid": 217164765619070

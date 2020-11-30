@@ -1,24 +1,24 @@
 {
-	"name": "Family1",
+	"name": "Family2",
 	"plugin-id": "Sprite",
-	"sid": 124158011266994,
+	"sid": 951190333469280,
 	"instanceVariables": [
 		{
-			"name": "rotan",
+			"name": "dis",
 			"type": "number",
 			"desc": "",
-			"sid": 401180576875136
+			"sid": 774428450044571
 		},
 		{
-			"name": "distB",
+			"name": "rotation",
 			"type": "number",
 			"desc": "",
-			"sid": 656943386519854
+			"sid": 905769314490573
 		}
 	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"block2"
+		"block"
 	]
 }

@@ -126,7 +126,10 @@
 			"Audio",
 			"Sprite",
 			"circle",
-			"block2"
+			"block2",
+			"center2",
+			"Text6",
+			"Text7"
 		],
 		"subfolders": []
 	},
@@ -134,7 +137,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Family1"
+			"Family1",
+			"Family2"
 		],
 		"subfolders": []
 	},

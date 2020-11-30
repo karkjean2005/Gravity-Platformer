@@ -16,15 +16,19 @@
 					},
 					"uid": 61,
 					"instanceVariables": {
-						"rotan": 0,
-						"distB": 0,
-						"roation": 100
+						"dis": 0,
+						"rotation": 0
 					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
 								"tags": ""
+							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},

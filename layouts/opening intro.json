@@ -72,7 +72,7 @@
 					}
 				},
 				{
-					"type": "Text2",
+					"type": "GravityPull",
 					"properties": {
 						"text": "Gravity Pull",
 						"enable-bbcode": true,
@@ -213,7 +213,7 @@
 					}
 				},
 				{
-					"type": "Text3",
+					"type": "Start",
 					"properties": {
 						"text": "Start",
 						"enable-bbcode": true,
@@ -238,9 +238,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 829,
+						"x": 821,
 						"y": 442,
-						"width": 275,
+						"width": 283,
 						"height": 62,
 						"originX": 0,
 						"originY": 0,
@@ -255,7 +255,7 @@
 					}
 				},
 				{
-					"type": "Text4",
+					"type": "Howtoplay",
 					"properties": {
 						"text": "How to play",
 						"enable-bbcode": true,
@@ -297,7 +297,7 @@
 					}
 				},
 				{
-					"type": "Text5",
+					"type": "Credit",
 					"properties": {
 						"text": "Credits",
 						"enable-bbcode": true,

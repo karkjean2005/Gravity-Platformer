@@ -801,6 +801,21 @@
 				}
 			],
 			"sid": 267609269856382
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 131100533619588,
+					"parameters": {
+						"object": "Start"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 287074183681392
 		}
 	],
 	"sid": 217164765619070

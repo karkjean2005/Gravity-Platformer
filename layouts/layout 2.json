@@ -6,6 +6,39 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "TiledBackground6",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 190,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -4,
+						"y": 85,
+						"width": 3799,
+						"height": 1834,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "gr",
 					"properties": {
 						"initially-visible": true,
@@ -3048,9 +3081,9 @@
 					},
 					"world": {
 						"x": 3771.5,
-						"y": 1009,
+						"y": 1007.5,
 						"width": 96,
-						"height": 1777,
+						"height": 1780,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

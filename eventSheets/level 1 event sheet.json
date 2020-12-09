@@ -2,6 +2,46 @@
 	"name": "Level 1 Event sheet",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "garv2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 559237641993996
+		},
+		{
+			"eventType": "variable",
+			"name": "rotationNumber2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 584672251969907
+		},
+		{
+			"eventType": "variable",
+			"name": "XVector2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 847992488351323
+		},
+		{
+			"eventType": "variable",
+			"name": "YVector2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 112290722055311
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -66,6 +106,729 @@
 				}
 			],
 			"sid": 248862662073512
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 579868267406741,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 290233225927551,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 245838147811388,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Gravity is off"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 493895056942160,
+									"parameters": {
+										"variable": "garv",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "p",
+									"sid": 326628715853434,
+									"parameters": {
+										"angle": "180"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "p",
+									"sid": 129714430055359,
+									"parameters": {
+										"instance-variable": "p_gav",
+										"value": "270"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 154537337062002,
+									"parameters": {
+										"variable": "garv",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 983216215540799
+						},
+						{
+							"eventType": "comment",
+							"text": "Gravity is on"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 871803135650286
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "p",
+									"sid": 300428304369616,
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "p",
+									"sid": 291900443321328,
+									"parameters": {
+										"instance-variable": "p_gav",
+										"value": "90"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 191791058444079,
+									"parameters": {
+										"variable": "garv",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 872446943477786
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 865485186679385,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [],
+			"sid": 496130124467039,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "p",
+							"sid": 901518956822841,
+							"parameters": {
+								"instance-variable": "p_gav",
+								"comparison": 0,
+								"value": "270"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "p",
+							"sid": 771344147541783,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "p",
+							"sid": 686247130977337,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 583909991073242
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "p",
+							"sid": 124568467338939,
+							"parameters": {
+								"instance-variable": "p_gav",
+								"comparison": 0,
+								"value": "90"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "p",
+							"sid": 948422028769407,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "p",
+							"sid": 739095475656179,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 465594730587275
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 974687125057926,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [],
+			"sid": 427414552053505,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "p",
+							"sid": 245384957555798,
+							"parameters": {
+								"instance-variable": "p_gav",
+								"comparison": 0,
+								"value": "270"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "p",
+							"sid": 964450616402624,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "p",
+							"sid": 317580453980120,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 402982901517941
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "p",
+							"sid": 109957704493047,
+							"parameters": {
+								"instance-variable": "p_gav",
+								"comparison": 0,
+								"value": "90"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "p",
+							"sid": 733419589477688,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "p",
+							"sid": 992467251359838,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 645350245799035
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 253685457431722,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "p",
+					"sid": 671384309223133,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 580790183690861
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 329745591016056
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-gravity",
+					"objectClass": "p",
+					"sid": 838987061259872,
+					"behaviorType": "Platform",
+					"parameters": {
+						"angle": "Self.p_gav"
+					}
+				}
+			],
+			"sid": 393549623310408
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "p",
+					"sid": 207118143890067,
+					"parameters": {
+						"object": "spikes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "p",
+					"sid": 530679410697628
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 624577722643504,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 565740941085991
+				}
+			],
+			"sid": 325146188177620
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 928481892911924
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Family1",
+					"sid": 999178680931883,
+					"parameters": {
+						"x": "center.X+Family1.distB*cos(Family1.rotan)"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Family1",
+					"sid": 447937025285798,
+					"parameters": {
+						"y": "center.Y+Family1.distB*sin(Family1.rotan)"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Family1",
+					"sid": 161143578130825,
+					"parameters": {
+						"x": "center.X ",
+						"y": "center.Y"
+					}
+				}
+			],
+			"sid": 217403536650239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 777235291479010,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Family1",
+					"sid": 755081093610947,
+					"parameters": {
+						"instance-variable": "rotan",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 273917845646319
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 466394268665582,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Family1",
+					"sid": 509760290718171,
+					"parameters": {
+						"instance-variable": "rotan",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 977770507115466
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 880737274559773
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 135317962401199,
+					"parameters": {
+						"variable": "XVector",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 213492889784240,
+					"parameters": {
+						"variable": "YVector",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 683541740846917
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "p",
+					"sid": 559642730312096,
+					"parameters": {
+						"object": "grvzone"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 277126045455684,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "grvzone",
+							"sid": 775852695086818,
+							"parameters": {
+								"instance-variable": "Relative"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 668933691263248,
+							"parameters": {
+								"variable": "XVector",
+								"value": "cos(grvzone.Angle)"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 535778700442078,
+							"parameters": {
+								"variable": "YVector",
+								"value": "sin(grvzone.Angle)"
+							}
+						}
+					],
+					"sid": 477077115738869
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "grvzone",
+							"sid": 671896456400076,
+							"parameters": {
+								"instance-variable": "Relative"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 530777965508819,
+							"parameters": {
+								"variable": "XVector",
+								"value": "cos(angle(p.X,p.Y,grvzone.X,grvzone.Y))"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 664509722760232,
+							"parameters": {
+								"variable": "YVector",
+								"value": "sin(angle(p.X,p.Y,grvzone.X,grvzone.Y))"
+							}
+						}
+					],
+					"sid": 552787774455303
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "p",
+					"sid": 593170197523118,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-gravity",
+					"objectClass": "p",
+					"sid": 705812959664861,
+					"behaviorType": "Platform",
+					"parameters": {
+						"angle": "angle(p.x, p.y,block.X,block.Y)"
+					}
+				}
+			],
+			"sid": 869409767019967
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 361486000682671
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Family2",
+					"sid": 847128762141317,
+					"parameters": {
+						"x": "center2.X+Family2.dis*cos(Family2.rotation)"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Family2",
+					"sid": 556976386936464,
+					"parameters": {
+						"y": "center2.Y+Family2.dis*sin(Family2.rotation)"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Family2",
+					"sid": 820471683350209,
+					"parameters": {
+						"x": "center2.X",
+						"y": "center2.Y"
+					}
+				}
+			],
+			"sid": 251707626006827
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 649988494919085,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Family2",
+					"sid": 651037364971538,
+					"parameters": {
+						"instance-variable": "rotation",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 116120010547349
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 930595305450009,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Family2",
+					"sid": 508924692042956,
+					"parameters": {
+						"instance-variable": "rotation",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 427588695681421
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "p",
+					"sid": 352618990092633,
+					"parameters": {
+						"object": "KilBar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "p",
+					"sid": 988838279715358
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 678413916422258,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 113502407703423
+				}
+			],
+			"sid": 190571697349963
 		}
 	],
 	"sid": 699735078988078

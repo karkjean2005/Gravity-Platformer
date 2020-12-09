@@ -1,12 +1,12 @@
 {
-	"name": "How to play Screen",
+	"name": "Howtoplaylayout",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "TiledBackground8",
+					"type": "TiledBackground10",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -18,14 +18,14 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 184,
+					"uid": 203,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2,
+						"x": -1,
 						"y": -1,
-						"width": 1919,
-						"height": 975,
+						"width": 1913,
+						"height": 969,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -39,7 +39,7 @@
 					}
 				},
 				{
-					"type": "Sprite4",
+					"type": "MenuButtonsprite",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -47,14 +47,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 187,
+					"uid": 204,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 881,
-						"y": 536,
-						"width": 761,
-						"height": 520,
+						"x": 1652,
+						"y": 847,
+						"width": 198,
+						"height": 131,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -68,28 +68,53 @@
 					}
 				},
 				{
-					"type": "TiledBackground9",
+					"type": "Sprite11",
 					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 185,
+					"uid": 205,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 621,
-						"y": 343,
-						"width": 487,
-						"height": 100,
-						"originX": 0,
-						"originY": 0,
+						"x": 618.345927691341,
+						"y": 426.0512763977314,
+						"width": 402.03013208800525,
+						"height": 293.52612402510135,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.018015514015445433,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite12",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 206,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1149,
+						"y": 424,
+						"width": 403,
+						"height": 296,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -101,12 +126,12 @@
 					}
 				},
 				{
-					"type": "Text8",
+					"type": "Text2",
 					"properties": {
-						"text": "How to play!",
+						"text": "Charater Movements",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 36,
+						"size": 35,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
@@ -122,14 +147,56 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 186,
+					"uid": 207,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 686,
-						"y": 362,
-						"width": 392,
-						"height": 67,
+						"x": 362,
+						"y": 637,
+						"width": 496,
+						"height": 127,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text3",
+					"properties": {
+						"text": "Gravity Switch",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 35,
+						"line-height": 2,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 208,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 958,
+						"y": 636,
+						"width": 395,
+						"height": 92,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -143,7 +210,7 @@
 					}
 				}
 			],
-			"sid": 863437521831760,
+			"sid": 399843778572259,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -168,11 +235,11 @@
 			"global": false
 		}
 	],
-	"sid": 816632651320634,
+	"sid": 780359998730184,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 3816,
 	"height": 1920,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "Hoowtoplayeventsheet"
 }

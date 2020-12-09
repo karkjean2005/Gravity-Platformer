@@ -1,0 +1,96 @@
+{
+	"name": "OpeningEventSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 448055138397805,
+					"parameters": {
+						"object": "SpriteStart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 390447705715827,
+					"parameters": {
+						"layout": "Level 1"
+					}
+				}
+			],
+			"sid": 242100025551090
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 492965920747533,
+					"parameters": {
+						"object": "SpriteHowToPlay"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 581104385930079,
+					"parameters": {
+						"layout": "Howtoplaylayout"
+					}
+				}
+			],
+			"sid": 525818121686713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 737888322119205
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 789168019928058,
+					"parameters": {
+						"audio-file": "intro 2 (less noisy)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 200823698183117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 355015833689013
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 793887941080247
+				}
+			],
+			"sid": 936168601104655
+		}
+	],
+	"sid": 269634901140699
+}

@@ -1,0 +1,72 @@
+{
+	"name": "Level 1 Event sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "p",
+					"sid": 187425083108551,
+					"parameters": {
+						"object": "Sprite18"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 247532511936274,
+					"parameters": {
+						"layout": "Level 2"
+					}
+				}
+			],
+			"sid": 172837540918886
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 750438113343605
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 405407290583854,
+					"parameters": {
+						"audio-file": "Hojoj theme (OST wav version long)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 129444291463898
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 289579091097894
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 517662977371512
+				}
+			],
+			"sid": 248862662073512
+		}
+	],
+	"sid": 699735078988078
+}

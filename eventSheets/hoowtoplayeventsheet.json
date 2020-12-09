@@ -1,0 +1,30 @@
+{
+	"name": "Hoowtoplayeventsheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 204370439126918,
+					"parameters": {
+						"object": "MenuButtonsprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 311932080852244,
+					"parameters": {
+						"layout": "Opening"
+					}
+				}
+			],
+			"sid": 228072540841879
+		}
+	],
+	"sid": 169732208252481
+}

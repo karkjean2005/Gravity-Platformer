@@ -197,12 +197,12 @@
 	},
 	"layouts": {
 		"items": [
+			"Level 1",
 			"Level 2",
 			"test",
 			"Layout 2",
 			"Opening",
-			"Howtoplaylayout",
-			"Level 1"
+			"Howtoplaylayout"
 		],
 		"subfolders": []
 	},

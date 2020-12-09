@@ -22,9 +22,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -92,
+						"x": -255,
 						"y": -298,
-						"width": 2315,
+						"width": 2478,
 						"height": 1937,
 						"originX": 0,
 						"originY": 0,
@@ -556,8 +556,8 @@
 						}
 					},
 					"world": {
-						"x": -226.5,
-						"y": 455,
+						"x": -71,
+						"y": 450,
 						"width": 57,
 						"height": 587,
 						"originX": 0.5,
@@ -598,6 +598,48 @@
 						"height": 515,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text7",
+					"properties": {
+						"text": "WASD, to move and space to control gravity",
+						"enable-bbcode": true,
+						"font": "Times New Roman",
+						"size": 14,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 35,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 85,
+						"y": 535,
+						"width": 204,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

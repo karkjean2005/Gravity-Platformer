@@ -182,7 +182,8 @@
 			"Sprite16",
 			"Sprite17",
 			"Sprite18",
-			"KilBar"
+			"KilBar",
+			"TiledBackground12"
 		],
 		"subfolders": []
 	},
@@ -346,9 +347,9 @@
 			0
 		],
 		"splashColor": [
-			1,
-			1,
-			1,
+			0,
+			0,
+			0,
 			0
 		],
 		"useThemeColor": false,

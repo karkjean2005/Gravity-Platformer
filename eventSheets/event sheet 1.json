@@ -794,9 +794,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 721955808765145,
+					"sid": 926527005823495,
 					"parameters": {
-						"layout": "Level 2"
+						"layout": "Level 1"
 					}
 				}
 			],

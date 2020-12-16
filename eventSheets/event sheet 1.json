@@ -772,7 +772,7 @@
 					"objectClass": "System",
 					"sid": 539577612990432,
 					"parameters": {
-						"layout": "Layout 2"
+						"layout": "Level 3"
 					}
 				}
 			],
@@ -794,9 +794,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 465874375101213,
+					"sid": 399770852768953,
 					"parameters": {
-						"layout": "Opening"
+						"layout": "Winner"
 					}
 				}
 			],
@@ -833,12 +833,18 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
+					"id": "on-end-of-layout",
 					"objectClass": "System",
-					"sid": 777189123304150
+					"sid": 176280867960655
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 150476655097496
+				}
+			],
 			"sid": 659905855941866
 		}
 	],

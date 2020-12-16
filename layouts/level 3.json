@@ -1,5 +1,5 @@
 {
-	"name": "Layout 2",
+	"name": "Level 3",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -326,8 +326,8 @@
 						}
 					},
 					"world": {
-						"x": 222,
-						"y": 922,
+						"x": 205,
+						"y": 899,
 						"width": 66.24,
 						"height": 90.27199999999999,
 						"originX": 0.7,
@@ -2998,7 +2998,7 @@
 				{
 					"type": "Text6",
 					"properties": {
-						"text": "Use Q and E to rotat",
+						"text": "Use Q and E to rotate",
 						"enable-bbcode": false,
 						"font": "Arial",
 						"size": 12,

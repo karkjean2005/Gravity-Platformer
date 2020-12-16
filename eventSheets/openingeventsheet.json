@@ -90,6 +90,30 @@
 				}
 			],
 			"sid": 936168601104655
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 628580401611324,
+					"parameters": {
+						"object": "Crddit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 928703464455161,
+					"parameters": {
+						"layout": "Credits"
+					}
+				}
+			],
+			"sid": 244726850461408
 		}
 	],
 	"sid": 269634901140699

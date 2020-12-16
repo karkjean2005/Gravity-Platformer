@@ -1,0 +1,30 @@
+{
+	"name": "Credit Event sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 227203424526565,
+					"parameters": {
+						"object": "Sprite19"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 534878650731313,
+					"parameters": {
+						"layout": "Opening"
+					}
+				}
+			],
+			"sid": 250875767278245
+		}
+	],
+	"sid": 557369703471012
+}

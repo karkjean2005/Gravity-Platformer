@@ -155,7 +155,7 @@
 			"Sprite7",
 			"Tilemap6",
 			"Sprite8",
-			"Sprite9",
+			"Crddit",
 			"SpriteStart",
 			"SpriteHowToPlay",
 			"GravityPullNew",
@@ -183,7 +183,25 @@
 			"Sprite17",
 			"Sprite18",
 			"KilBar",
-			"TiledBackground12"
+			"TiledBackground12",
+			"TiledBackground13",
+			"Text4",
+			"Text5",
+			"Text9",
+			"Sprite19",
+			"Text10",
+			"TiledBackground14",
+			"Sprite9",
+			"TiledBackground15",
+			"Text11",
+			"Text12",
+			"Text13",
+			"Text14",
+			"PlayagainButton",
+			"GravityPullNew2",
+			"GravityPullNew3",
+			"Text15",
+			"Text16"
 		],
 		"subfolders": []
 	},
@@ -201,9 +219,11 @@
 			"Level 1",
 			"Level 2",
 			"test",
-			"Layout 2",
+			"Level 3",
 			"Opening",
-			"Howtoplaylayout"
+			"Howtoplaylayout",
+			"Credits",
+			"Winner"
 		],
 		"subfolders": []
 	},
@@ -212,7 +232,9 @@
 			"Event sheet 1",
 			"OpeningEventSheet",
 			"Hoowtoplayeventsheet",
-			"Level 1 Event sheet"
+			"Level 1 Event sheet",
+			"Credit Event sheet",
+			"wInner event sheet"
 		],
 		"subfolders": []
 	},

@@ -1,0 +1,30 @@
+{
+	"name": "wInner event sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 454603536041364,
+					"parameters": {
+						"object": "PlayagainButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 758229500260770,
+					"parameters": {
+						"layout": "Opening"
+					}
+				}
+			],
+			"sid": 992921316733605
+		}
+	],
+	"sid": 877591439445623
+}
